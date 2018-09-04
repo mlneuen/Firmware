@@ -1,0 +1,52 @@
+# Generic Octacopter in coax configuration
+
+[info]
+key = "8h"
+description = "Octocoper in H configuration"
+
+[rotor_default]
+axis      = [0.0, 0.0, -1.0]
+Ct        = 1.0
+Cm        = 0.05
+
+# Why do the z positions vary in the code we took this from?
+
+[[rotors]]
+name      = "mot_1"
+position  = [485, -263, 0]
+direction = "CCW"
+
+[[rotors]]
+name     = "mot_2"
+position = [221, -263, 0]
+direction = "CW"
+
+[[rotors]]
+name      = "mot_3"
+position  = [-221, -263, 0]
+direction = "CW"
+
+[[rotors]]
+name     = "mot_4"
+position = [-485, -263, 0]
+direction = "CCW"
+
+[[rotors]]
+name     = "mot_5"
+position = [485, 263, 0]
+direction = "CW"
+
+[[rotors]]
+name      = "mot_6"
+position  = [221, 263, 0]
+direction = "CCW"
+
+[[rotors]]
+name     = "mot_7"
+position = [-221, 263, 0]
+direction = "CCW"
+
+[[rotors]]
+name      = "mot_8"
+position  = [-485, 263, 0]
+direction = "CW"
